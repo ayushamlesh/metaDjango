@@ -54,7 +54,7 @@ ROOT_URLCONF = 'chefsProject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['chefsApp/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

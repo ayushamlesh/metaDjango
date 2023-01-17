@@ -18,5 +18,8 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('chefsApp.urls'))
+    path('b/', include('chefsApp.urls')),
+    path('m/', include('chefsApp.urls')),
+    path('', include('chefsApp.urls')),
+    path('getform/', include('chefsApp.urls')),
 ]
