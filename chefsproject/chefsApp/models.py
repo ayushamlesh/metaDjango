@@ -3,10 +3,9 @@ from unicodedata import name
 # Create your models here.
 
 
-class menu(models.Model):
+class Menu(models.Model):
     name = models.CharField(max_length=100)
-    desc = models.CharField(max_length=100)
     price = models.IntegerField()
 
     def __str__(self):
-        return self.name + " : "+self.desc + " Rs. " + self.price
+        return self.name + " : " + str(self.price)
